@@ -1,0 +1,129 @@
+html * {
+  --fontSize: 1.3rem;
+  font-size: var(--fontSize);
+  line-height: 1.4;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(97, 196, 230), violet);
+
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+abbr {
+  font-family: 'Lobster', serif;
+  color: rgb(44, 59, 59);
+}
+
+p, 
+p * {
+  color: rgb(44, 59, 59);
+}
+
+p > abbr,
+a > abbr {
+  font-family: 'Roboto', sans-serif;
+}
+
+a > abbr {
+  color: green;
+}
+
+a > abbr:visited {
+  color: darkgreen;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2,
+h2 > abbr {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+header {
+  margin: 0 auto;
+}
+
+div, 
+header {
+  padding: var(--fontSize) 0;
+}
+
+.page-wrapper {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.design-selection nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.design-archives nav ul {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+
+.design-selection nav ul li,
+.design-archives nav ul li {
+  padding: var(--fontSize);
+  margin: var(--fontSize);
+  /*calc to account for margins in between items*/
+  flex-basis: calc(50% - (2 * var(--fontSize)));
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid rgb(102, 129, 129);
+  border-radius: 20px;
+  list-style-type: none;
+  transition: 0.3s;
+  color: rgb(44, 59, 59);
+
+}
+
+.design-selection nav ul li:hover,
+.design-archives nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.design-selection nav ul li a,
+.design-archives nav ul li a {
+  font-family: 'Lobster', serif;
+}
+
+
+.extra1,
+.extra2,
+.extra3,
+.extra4,
+.extra5,
+.extra6 {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  visibility: none;
+}
+
+
